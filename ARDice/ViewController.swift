@@ -45,17 +45,18 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-       
         
-        // Create a session configuration
-        let configuration = ARWorldTrackingConfiguration()
         
-        print("Session is supported = \(ARConfiguration.isSupported)")
-        print("World tracking is supported = \(ARWorldTrackingConfiguration.isSupported)")
-
-        // Run the view's session
-        sceneView.session.run(configuration)
-        
+            
+            // Create a session configuration
+            let configuration = ARWorldTrackingConfiguration()
+            
+            print("Session is supported = \(ARConfiguration.isSupported)")
+            print("World tracking is supported = \(ARWorldTrackingConfiguration.isSupported)")
+            
+            // Run the view's session
+            sceneView.session.run(configuration)
+            
         }
     
     override func viewWillDisappear(_ animated: Bool) {
