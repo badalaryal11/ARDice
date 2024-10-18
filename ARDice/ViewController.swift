@@ -78,10 +78,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             let results = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
             
-            if !results.isEmpty {
-                print("touched the plane")
-            } else {
-                print("touched somewhere else")
+            if let hitResult = results.first{
+                
+                print(hitResult)
             }
         }
     }
