@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ARDice-->
         <scene sceneID="tXr-a1-R10">
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="ARDice" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,7 +30,12 @@
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Y6q-ph-SUm">
+                    <navigationItem key="navigationItem" title="ARDice" id="Y6q-ph-SUm">
+                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="AvF-aS-Nme">
+                            <connections>
+                                <action selector="removeAllDice:" destination="BV1-FR-VrT" id="Bao-OR-Eck"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Cky-Kw-IWk">
                             <connections>
                                 <action selector="rollAgain:" destination="BV1-FR-VrT" id="hPv-ZX-SkO"/>
@@ -43,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="882" y="6"/>
+            <point key="canvasLocation" x="1028" y="-2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mb3-1A-IYC">
